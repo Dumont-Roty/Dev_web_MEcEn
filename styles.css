@@ -76,6 +76,33 @@ header img{
     box-shadow: 12px 12px 2px 1px #f25a2980;
     border-radius: 10px;
 }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #f25a29 0%, #373737 100%);
+    /* Disposition flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #f25a29;
+    border-radius: 10px;
+}
+
+#cocktails>div:hover .overlay {
+    z-index: 1;
+    transform: rotate(360deg);
+}
+.overlay img{
+    width: 140px;
+}
+.overlay p {
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
 .Sunmoon {
     background: url(./Images/cocktail_01.jpg);
     background-size: cover;
