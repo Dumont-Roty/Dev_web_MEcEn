@@ -96,6 +96,16 @@ header img{
     background: url(./Images/cocktail_05.jpg);
     background-size: cover;
 }
+#cocktails>div h3 {
+    font-style: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    background-color: #00000080;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 
 footer {
     display: flex;
