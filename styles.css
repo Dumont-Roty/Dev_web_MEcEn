@@ -64,6 +64,11 @@ header img{
 #cocktails {
     padding: 150px 20px;
     margin: 10px 20%;
+    display: grid;
+    grid-template-areas: /* On découpe la page en cadrillage pour mettre les images*/
+            "c_01 c_01 c_01 c_02 c_02 c_02"
+            "c_03 c_03 c_04 c_04 c_05 c_05";
+    grid-gap: 10px;
 }
 #cocktails>div {
     position: relative;
@@ -111,22 +116,27 @@ header img{
 }
 
 .Sunmoon {
+    grid-area: c_01;
     background: url(./Images/cocktail_01.jpg);
     background-size: cover;
 }
 .Mentalux {
+    grid-area: c_02;
     background: url(./Images/cocktail_02.jpg);
     background-size: cover;
 }
 .Cocowhip {
+    grid-area: c_03;
     background: url(./Images/cocktail_03.jpg);
     background-size: cover;
 }
 .Citrinus {
+    grid-area: c_04;
     background: url(./Images/cocktail_04.jpg);
     background-size: cover;
 }
 .Spicherry {
+    grid-area: c_05;
     background: url(./Images/cocktail_05.jpg);
     background-size: cover;
 }
